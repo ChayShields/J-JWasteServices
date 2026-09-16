@@ -32,7 +32,7 @@ export const services: ServiceDefinition[] = [
       "Small businesses, cake sheds and pop-up shop owners",
       "Airbnbs and private housing",
       "Caravans",
-      "From £45 for 240L bins",
+      "240 litre bins supplied from £45 per bin",
     ],
   },
   {

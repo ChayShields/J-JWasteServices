@@ -80,8 +80,22 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-white/10 px-4 py-4 text-center text-xs text-grey-100/50 sm:px-6">
-        © {new Date().getFullYear()} {business.legalName}. All rights reserved.
+      <div className="border-t border-white/10 px-4 py-4 text-center text-xs text-grey-100/50 sm:px-6 flex flex-col items-center gap-1 sm:flex-row sm:justify-between">
+        <span>
+          © {new Date().getFullYear()} {business.legalName}. All rights
+          reserved.
+        </span>
+        <span>
+          Designed and developed by{" "}
+          <a
+            href="https://hireme.link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-grey-100/70 hover:text-green-400"
+          >
+            Chay Shields
+          </a>
+        </span>
       </div>
     </footer>
   );
