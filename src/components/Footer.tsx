@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MapPin, MessageCircle } from "lucide-react";
 import { business } from "@/lib/business";
+import { CookieSettingsButton } from "@/components/CookieConsent";
 
 function FacebookIcon() {
   return (
@@ -76,6 +77,9 @@ export default function Footer() {
               <Link href="/terms-of-service" className="hover:text-green-400">
                 Terms of Service
               </Link>
+            </li>
+            <li>
+              <CookieSettingsButton className="py-1.5 hover:text-green-400" />
             </li>
           </ul>
         </div>

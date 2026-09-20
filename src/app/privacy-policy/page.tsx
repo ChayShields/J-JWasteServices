@@ -11,7 +11,7 @@ export default function PrivacyPolicyPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
       <h1 className="text-4xl font-bold text-black-950">Privacy Policy</h1>
-      <p className="mt-2 text-sm text-black-800/70">Last updated: 15 September 2026</p>
+      <p className="mt-2 text-sm text-black-800/70">Last updated: 20 September 2026</p>
 
       <div className="prose mt-8 flex flex-col gap-6 text-black-800">
         <section>
@@ -41,20 +41,24 @@ export default function PrivacyPolicyPage() {
             when you browse this website.
           </p>
           <p className="mt-2">
-            The only data collected via this website is anonymised usage data
-            through Google Analytics (pages visited, approximate location,
-            device type), and only if you accept analytics cookies via the
-            cookie banner. If you contact us directly via WhatsApp or
+            The only data collected via this website is usage data through
+            Google Analytics (pages visited, approximate location, device
+            type, linked to a random ID rather than your name or contact
+            details), and only if you accept analytics cookies via the
+            cookie banner. Accepting sets two cookies, called _ga and _ga_
+            followed by an ID, which last up to 2 years. If you contact us directly via WhatsApp or
             Facebook Messenger, any information you share with us there is
             handled under WhatsApp&apos;s and Meta&apos;s own privacy
-            policies, not this one.
+            policies, not this one. Our hosting provider (Vercel) processes
+            technical information such as your IP address when your browser
+            requests a page, so the site can be delivered and kept secure.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold text-black-950">3. How We Use It</h2>
           <p className="mt-2">
-            Where you accept analytics cookies, we use anonymised usage data
+            Where you accept analytics cookies, we use this usage data
             to understand how visitors use this site so we can improve it. We
             do not sell your data or use it for third-party advertising.
           </p>
@@ -64,16 +68,17 @@ export default function PrivacyPolicyPage() {
           <h2 className="text-xl font-semibold text-black-950">4. Legal Basis</h2>
           <p className="mt-2">
             Analytics cookies are only used with your consent, given via the
-            cookie banner on this site. You can withdraw that consent at any
-            time by clearing your browser&apos;s local storage for this site
-            or by rejecting cookies when the banner reappears.
+            cookie banner on this site. You can withdraw or change that consent
+            at any time using the Cookie settings link in the footer of any
+            page, which reopens the cookie banner and removes any analytics
+            cookies already set.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold text-black-950">5. Third Parties</h2>
           <p className="mt-2">
-            We use Google Analytics (GA4) for anonymised usage analytics on
+            We use Google Analytics (GA4) for usage analytics on
             this website, only with your consent. Google processes this data
             under its own privacy policy.
           </p>
