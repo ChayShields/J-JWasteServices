@@ -1,8 +1,6 @@
-import { headers } from "next/headers";
 import { business, services } from "@/lib/business";
 
-export default async function LocalBusinessSchema() {
-  const nonce = (await headers()).get("x-nonce") ?? undefined;
+export default function LocalBusinessSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -35,7 +33,6 @@ export default async function LocalBusinessSchema() {
   return (
     <script
       type="application/ld+json"
-      nonce={nonce}
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
   );
