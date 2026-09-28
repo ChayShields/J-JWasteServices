@@ -3,7 +3,7 @@ export const business = {
   legalName: "J and J Waste Services",
   phone: "07378 404591",
   whatsapp: "https://wa.me/447378404591",
-  siteUrl: "https://jjwasteservices.co.uk",
+  siteUrl: "https://www.jjwasteservices.co.uk",
   addressLocality: "Lowestoft",
   addressRegion: "Suffolk",
   addressCountry: "GB",
