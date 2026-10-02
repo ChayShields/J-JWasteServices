@@ -90,14 +90,14 @@ export default function Footer() {
           reserved.
         </span>
         <span>
-          Designed and developed by{" "}
+          Designed and developed by Chay Shields at{" "}
           <a
-            href="https://hireme.link"
+            href="https://buildory.co.uk"
             target="_blank"
             rel="noopener noreferrer"
             className="text-grey-100/70 hover:text-green-400"
           >
-            Chay Shields
+            Buildory
           </a>
         </span>
       </div>
