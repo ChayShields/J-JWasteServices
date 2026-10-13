@@ -42,12 +42,21 @@ export const metadata: Metadata = {
     description:
       "Wheelie bin emptying, man and van collections, house and shed clearances, and general waste and appliance removal across Lowestoft, Suffolk.",
     url: business.siteUrl,
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: `${business.name} logo`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${business.name} | Waste Removal & Man with a Van in Lowestoft`,
     description:
       "Wheelie bin emptying, man and van collections, house and shed clearances, and general waste and appliance removal across Lowestoft, Suffolk.",
+    images: ["/og-image.jpg"],
   },
   alternates: {
     canonical: "/",
