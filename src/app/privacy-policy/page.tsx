@@ -5,6 +5,18 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description: `Privacy Policy for ${business.name}, explaining how we handle data in line with UK GDPR.`,
   alternates: { canonical: "/privacy-policy" },
+  // A page's own openGraph replaces the root one, so it repeats the site
+  // name, locale and share image. Without the url here og:url fell back to
+  // the home page.
+  openGraph: {
+    title: `Privacy Policy | ${business.name}`,
+    description: `Privacy Policy for ${business.name}, explaining how we handle data in line with UK GDPR.`,
+    url: "/privacy-policy",
+    siteName: business.name,
+    locale: "en_GB",
+    type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: `${business.name} logo` }],
+  },
 };
 
 export default function PrivacyPolicyPage() {

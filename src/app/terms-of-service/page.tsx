@@ -5,6 +5,18 @@ export const metadata: Metadata = {
   title: "Terms of Service",
   description: `Terms of Service for ${business.name} and its website.`,
   alternates: { canonical: "/terms-of-service" },
+  // A page's own openGraph replaces the root one, so it repeats the site
+  // name, locale and share image. Without the url here og:url fell back to
+  // the home page.
+  openGraph: {
+    title: `Terms of Service | ${business.name}`,
+    description: `Terms of Service for ${business.name} and its website.`,
+    url: "/terms-of-service",
+    siteName: business.name,
+    locale: "en_GB",
+    type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: `${business.name} logo` }],
+  },
 };
 
 export default function TermsOfServicePage() {
